@@ -8,19 +8,15 @@
 </head>
 <body>
     <H1>Sample for showing the locale problem</H1>
-    <c:out value="${ PageContext.request.locale.language }"/><br/>
-    <c:out value="${ pageContext.request.locale.language }"/><br/>
-    <c:out value="${ pageContext.locale }"/><br/>
-    <c:out value="${ pageContext.getLocale }"/><br/>
-    <c:out value="${ requestContext.locale.language }"/><br/>
-    <c:out value="${ request.locale.language }"/><br/>
 
-    <c:out value="${PageContext.request.locale.language}"/><br/>
-    <c:out value="${pageContext.request.locale.language}"/><br/>
-    <c:out value="${pageContext.locale}"/><br/>
-    <c:out value="${pageContext.getLocale}"/><br/>
-    <c:out value="${requestContext.locale.language}"/><br/>
-    <c:out value="${request.locale.language}"/><br/>
+    <ul>
+        <li><a href="?lang=nl">Dutch (nl)</a></li>
+        <li><a href="?lang=en">English (en)</a></li>
+        <li><a href="?lang=it">Italian (it)</a></li>
+        <li><a href="?lang=es">Spanish (es)</a></li>
+    </ul>
+
+    requestContext.locale.language: <c:out value="${requestContext.locale.language}"/><br/>
 
 </body>
 </html>
